@@ -1,0 +1,7 @@
+name             'pw_wpasupplicant'
+maintainer       'Christoph Lukas'
+maintainer_email 'christoph.lukas@gmx.net'
+license          'Apache 2.0'
+description      'Installs and configures wpasupplicant'
+long_description 'Installs and configures wpasupplicant'
+version          '0.1.0'
