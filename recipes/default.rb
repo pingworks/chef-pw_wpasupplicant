@@ -43,3 +43,12 @@ end
 link '/etc/wpa_supplicant/wpa.conf' do
   to 'pingworks.conf'
 end
+
+
+bash 'ifup wlan' do
+  user 'root'
+  cwd '/tmp'
+  code <<-EOH
+  ifup #{node['pw_wpasupplicant']['wlan_iface']}
+  EOH
+end
